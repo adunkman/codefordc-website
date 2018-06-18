@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>
+      
+        Tales from #200 - 
+      
+      Chi Hack Night - Chicago's weekly event to build, share, and learn about civic tech.
+    </title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <meta content="April 12th, 2016 marked our 200th Chi Hack Night! From our humble beginnings on March 22nd, 2012 as 4 nerds sitting around a table eating macaroni, to this week with 130 people from across the city from all manner of backgrounds, skillsets and neighborhoods, we have come a long, long way. Here’s what happened at Chi Hack Night 200." name='description' />
+    
+    <meta content='Chi Hack Night' name='author' />
+
+    <!-- Facebook metadata -->
+    <meta content="Chi Hack Night" property="og:site_name">
+    
+      <meta content="Tales from #200 - Chi Hack Night" property="og:title">
+    
+    
+      <meta content="article" property="og:type">
+    
+    
+      <meta content="April 12th, 2016 marked our 200th Chi Hack Night! From our humble beginnings on March 22nd, 2012 as 4 nerds sitting around a table eating macaroni, to this week with 130 people from across the city from all manner of backgrounds, skillsets and neighborhoods, we have come a long, long way. Here’s what happened at Chi Hack Night 200." property="og:description">
+    
+    
+      <meta content="https://chihacknight.org/blog/2016/04/15/tales-from-200.html" property="og:url">
+    
+    
+      <meta content="2016-04-15T00:00:00-05:00" property="article:published_time">
+      <meta content="https://chihacknight.org/about-us/" property="article:author">
+    
+
+    
+      <meta content="https://chihacknight.org/images/blog/2016-04-15-tales-from-200/de-cw-200.jpg" property="og:image">
+    
+    
+      
+      <meta content="blog" property="article:section">
+      
+    
+    
+      
+    
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Chi Hack Night">
+    <meta name="twitter:creator" content="Chi Hack Night">
+    
+      <meta name="twitter:title" content="Tales from #200">
+    
+    
+      <meta name="twitter:url" content="https://chihacknight.org/blog/2016/04/15/tales-from-200.html">
+    
+    
+      <meta name="twitter:description" content="April 12th, 2016 marked our 200th Chi Hack Night! From our humble beginnings on March 22nd, 2012 as 4 nerds sitting around a table eating macaroni, to this week with 130 people from across the city from all manner of backgrounds, skillsets and neighborhoods, we have come a long, long way. Here’s what happened at Chi Hack Night 200.">
+    
+    
+      <meta name="twitter:image" content="https://chihacknight.org/images/blog/2016-04-15-tales-from-200/de-cw-200.jpg">
+    
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://chihacknight.org/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://chihacknight.org/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="Chi Hack Night"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://chihacknight.org/mstile-144x144.png" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.flatly.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/analytics_lib.js"></script>
+
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/dataTables.bootstrap.js"></script>
+    <script src="/js/jquery.dataTables.sorting.js"></script>
+    <script src="/js/jquery.address.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/spin.min.js"></script>
+    <script src="/js/jquery.spin.js"></script>
+    <script src="/js/jquery.scrollto.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverted navbar-static-top">
+      <div class="container">
+        <div class='col-sm-10 col-sm-offset-1'>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src='/images/logo/logo.png' alt='Chi Hack Night' title='Chi Hack Night' class='img-responsive' /></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href='/events/index.html'><i class='fa fa-calendar-o'></i> Events</a></li>
+              <li><a href='/breakouts.html'><i class='fa fa-group'></i> Breakouts</a></li>
+              <li><a href='/blog/index.html'><i class='fa fa-pencil'></i> Blog</a></li>
+              <li><a href='/projects.html'><i class='fa fa-rocket'></i> Projects</a></li>
+              <li><a href='/about.html'><i class='fa fa-info-circle'></i> About</a></li>
+              <li><a href='/donate/' class='donate'><i class='fa fa-thumbs-up'></i> Donate</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div id='primary-content' class='col-sm-10 col-sm-offset-1'>
+      
+        <div class='row'>
+  <div class="col-sm-12 post">
+    <h2>
+      Tales from #200
+    </h2>
+    <p class='muted'>
+      Published on Apr 15, 2016 by
+      Derek Eder
+      
+    </p>
+
+    <p class="text-center"><img src="/images/blog/2016-04-15-tales-from-200/de-cw-200.jpg" alt="Happy 200 from Derek and Christopher!" class="img-thumbnail" /><br />
+
+<small>
+    <em>Happy 200 from Derek and Christopher!</em>
+</small>
+</p>
+
+<p>April 12th, 2016 marked our 200th Chi Hack Night!</p>
+
+<p>From our humble beginnings on <a href="http://chihacknight.org/events/2012/03/22/the-first-hack-night.html">March 22nd, 2012</a> as 4 nerds sitting around a table eating macaroni, to this week with 130 people from across the city from all manner of backgrounds, skillsets and neighborhoods, we have come a long, long way.</p>
+
+<p>For those of you who have ever attended Chi Hack Night, I thank you for participating. For everyone else reading this, come join us next Tuesday!</p>
+
+<p>Here’s what happened at <a href="/events/2016/04/12/200th-event-celebration.html">Chi Hack Night 200</a>:</p>
+
+<h2 id="lightning-talks">Lightning talks</h2>
+
+<p>To celebrate this day, we forgoed from our typical presentation, and instead heard lightning talks from 9 members of Chi Hack Night about what they’ve done at or learned from our group.</p>
+
+<p>Thanks to sponsorship from Microsoft and the skilled team Scrappers Film Group, we recorded all of them.</p>
+
+<h3 id="the-pension-project---surprising-lessons-in-civics-by-ben-galewskyhttpswwwlinkedincominbengalewsky">The Pension Project - Surprising Lessons in Civics by <a href="https://www.linkedin.com/in/bengalewsky">Ben Galewsky</a></h3>
+
+<p>Ben tells us what he’s learned from his project - Modelling Pension Reform in Illinois.</p>
+
+<p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/cYykJsGGO1Q" width="100%"></iframe></p>
+
+<h3 id="the-story-of-one-really-big-vacant-city-owned-lot-by-eric-van-zantenhttpstwittercomevanzanten">The story of one, really big, vacant, city owned lot by <a href="https://twitter.com/evanzanten">Eric van Zanten</a></h3>
+
+<p>Eric tells us everything he could find out about one, really big, vacant, city owned lot while he was sick on his couch one Thanksgiving in 2014.</p>
+
+<p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/vG1nwjwUlqc" width="100%"></iframe></p>
+
+<h3 id="microsoft-civic-tech-no-shills-allowed-by-kevin-weihttpstwittercomweitoogood">Microsoft Civic Tech: No Shills Allowed! by <a href="https://twitter.com/Wei_Too_Good">Kevin Wei</a></h3>
+
+<p>Kevin Wei tells us about what he’s learned as a Microsoft Civic Tech Fellow.</p>
+
+<p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/8JU7R1EOkh0" width="100%"></iframe></p>
+
+<h3 id="what-does-it-mean-to-leave-ego-out-of-it-by-kristi-leachhttpstwittercomkristil">What does it mean to leave ego out of it? by <a href="https://twitter.com/kristil">Kristi Leach</a></h3>
+
+<p>Kristi reflects on what she’s learned at Chi Hack Night as a User-Centered Designer.</p>
+
+<p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/H5T7iHSWcV8" width="100%"></iframe></p>
+
+<h3 id="the-city-is-your-classroom-by-vinesh-kannanhttpstwittercomvineshgkannan">The City Is Your Classroom by <a href="https://twitter.com/vineshgkannan">Vinesh Kannan</a></h3>
+
+<p>Vinesh tells us of a strange class he had last week. But was it a dream?</p>
+
+<p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/-Q9iAXpWxjA" width="100%"></iframe></p>
+
+<h3 id="my-building-doesnt-recycle-the-odyssey-by-claire-micklinhttpstwittercomclairemicklin">My Building Doesn’t Recycle: The Odyssey by <a href="https://twitter.com/clairemicklin/">Claire Micklin</a></h3>
+
+<p>After launching in February 2015, the app quickly gained media exposure and amassed thousands of resident reports of buildings that do not offer recycling services.</p>
+
+<p>Now it’s time to build on the momentum by extending the app’s capacity as an advocacy tool and encouraging further involvement from both building residents and policymakers.</p>
+
+<p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/ooSZv7_2SrI" width="100%"></iframe></p>
+
+<h3 id="guerrilla-marketing-for-civic-tech-projects-by-joel-d-inwoodhttpstwittercomjoeldinwood">Guerrilla Marketing for Civic Tech Projects by <a href="https://twitter.com/joeldinwood">Joel D. Inwood</a></h3>
+
+<p>Joel Inwood asks, so you built an app. Now what? He expounds further on <a href="http://chihacknight.org/blog/2016/03/04/so-you-built-an-app-now-what-guerilla-marketing-protips-for-civic-tech-apps.html">this blog post</a>.</p>
+
+<p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/JlyVdTno3Mw" width="100%"></iframe></p>
+
+<h3 id="code-clinic-lessons-learned-by-rene-m-pacchahttpsgithubcomrenemarcelo">Code Clinic Lessons Learned by <a href="https://github.com/renemarcelo/">Rene M Paccha</a></h3>
+
+<p>Rene M Paccha goes over some example lessons to be embraced and the range of ideas he’s heard from attendees over the years.</p>
+
+<p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/pX27DCkpkY8" width="100%"></iframe></p>
+
+<h3 id="how-to-avoid-apps-by-cathy-denghttpstwittercomcthydng">How to avoid apps by <a href="https://twitter.com/cthydng">Cathy Deng</a></h3>
+
+<p>Cathy says civic tech is more than civic apps. Let’s talk about some other types of tech projects!</p>
+
+<p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/19exy8rX5m8" width="100%"></iframe></p>
+
+<h2 id="blog-posts">Blog posts</h2>
+
+<p>We also <a href="http://localhost:4000/blog/2016/03/25/chi-hack-night-200-call-for-speakers-and-writers.html">invited folks</a> to share their Chi Hack Night stories, projects, learnings and congratulations in written form.</p>
+
+<p><strong><a href="http://chihacknight.org/blog/2016/04/08/200-celebration-congratulations-from-cook-county-government.html">Congratulations from Cook County Government!</a></strong> by Simona Rollinson<br />
+Simona Rollinson, Cook County’s Chief Information Officer, offers her congratulations to Chi Hack Night and the broader civic tech ecosystem in Cook County. In addition to providing data and information, she hopes to strengthen the fabric of this community. A strong civic tech community is a public asset.</p>
+
+<p><strong><a href="http://chihacknight.org/blog/2016/04/09/200-celebration-why-i-come-to-chi-hack-night.html">Why I Come to Chi Hack Night</a></strong> by Emily Drevets<br />
+I don’t code or design or project manage or map. I am a writer. And an improviser. And sometimes a marketer. And I read a lot of books. Despite that, I have felt so welcome. More importantly, I’ve realized how every problem is interdisciplinary and we need everyone on board—everyone from all backgrounds— to solve them.</p>
+
+<p><strong><a href="http://chihacknight.org/blog/2016/04/10/200-celebration-becoming-a-runner-up-in-a-hackathon-without-writing-a-single-line-of-code.html">Becoming a Runner-Up in a Hackathon (without writing a single line of code)</a></strong> by Audrey Henderson<br />
+It was September 2012, and I was reading a description for the Reinventing Chicago event at CNT (Center for Neighborhood Technology) the following month. The cost was $100, which isn’t a huge amount of money, but not exactly pocket change, at least not for me. But just as I was about to enter my payment information, I noticed that hackathon participants could attend for free. Even though I had no idea what a hackathon was, I figured, it was a weekend. How bad could it be?</p>
+
+<p><strong><a href="http://chihacknight.org/blog/2016/04/11/200-celebration-why-i-attend-chicago-hack-night-events.html">Why I Attend Chicago Hack Night Events</a></strong> by Daniel Bassill<br />
+I’ve been attending Chicago Hack Night events for at least 2 years and I’m writing this article to help celebrate their 200th weekly gathering. This image is from May 29, 2016, where the Heartland Alliance presented information. You can see me in the middle, sitting by the wall. That’s my usual spot. Helps me see better.</p>
+
+<p><strong><a href="http://chihacknight.org/blog/2016/04/12/200-celebration-a-place-to-learn-and-grow-civic-tech-leadership.html">A place to learn and grow civic tech leadership</a></strong> by Christopher Whitaker<br />
+In both his State of the Union and his remarks at #SXSW, Chicagoan and President Barack Obama stated that the most important office in a democracy was that of the Office of the Citizen. At Chi Hack Night, we’re privileged to be part of an active movement of people getting engaged in their communities through the use of technology.</p>
+
+<h2 id="chi-hack-night-cookies">Chi Hack Night Cookies!</h2>
+
+<p>It all started with a Tweet by Steven Vance to Ted Whalen. Ted had written a <a href="http://introvert.net/blog/2004/04/17/what-is-the-deal-with-the-stars-on-the-chicago-flag/">blog post about how the official Chicago star is supposed to look like</a>. Knowing this, who better to help with making a proper Chi Hack Night star-shaped cake?</p>
+
+<p>Little did we know, Ted’s wife Donna was a pastry chef.</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/stevevance">@stevevance</a> <a href="https://twitter.com/tewhalen">@tewhalen</a> <a href="https://twitter.com/chihacknight">@chihacknight</a> Yes. When is it?</p>&mdash; donna m (@andshewas) <a href="https://twitter.com/andshewas/status/712983195633979393">March 24, 2016</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><br /></p>
+
+<p>We got to talking with Donna about a cake, and quickly decided that cookies would be much easier, logistically. So we agreed to pay her for the materials to make 200 star-shaped cookies, each one numbered 1-200 for every event we’ve had.</p>
+
+<p>Here’s how they turned out:</p>
+
+<p class="text-center"><img src="/images/blog/2016-04-15-tales-from-200/200-cookies.jpg" alt="200 Star Cookies: one for every Chi Hack Night" class="img-thumbnail" /><br />
+
+<small>
+    <em>200 Star Cookies: one for every Chi Hack Night</em>
+</small>
+</p>
+
+<p>At Chi Hack Night 200, we invited people take a cookie to look up the event it corresponded to. The results were amazing.</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Last night&#39;s 1st cookie was for <a href="https://twitter.com/chihacknight">@chihacknight</a> episode #123, The Story of Large Lots <a href="https://t.co/0K4Gk6daxe">https://t.co/0K4Gk6daxe</a> <a href="https://t.co/kQ6GyD1bFU">pic.twitter.com/kQ6GyD1bFU</a></p>&mdash; Kristi (@Kristil) <a href="https://twitter.com/Kristil/status/720357458217046018">April 13, 2016</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><br /></p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Throwback to <a href="https://twitter.com/chihacknight">@chihacknight</a> #172! <a href="https://twitter.com/blacktechmecca">@blacktechmecca</a> presented and it was my first ChiHackNight :) <a href="https://t.co/JnilKSDhJd">pic.twitter.com/JnilKSDhJd</a></p>&mdash; Vinesh Kannan (@vineshgkannan) <a href="https://twitter.com/vineshgkannan/status/720028838017822721">April 12, 2016</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><br /></p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Happy 200th event <a href="https://twitter.com/chihacknight">@chihacknight</a>! Simply the best <a href="https://twitter.com/hashtag/civictech?src=hash">#civictech</a> community here in <a href="https://twitter.com/hashtag/chicago?src=hash">#chicago</a>. 186 was my first but alas! <a href="https://t.co/XGdS8iecf2">pic.twitter.com/XGdS8iecf2</a></p>&mdash; Kevin Wei (@Wei_Too_Good) <a href="https://twitter.com/Wei_Too_Good/status/720030829259448325">April 12, 2016</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><br /></p>
+
+<p>Donna also made a big 200 cookie, and of course Christopher and I ate it.</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The ceremonial eating of the <a href="https://twitter.com/hashtag/chihacknight?src=hash">#chihacknight</a> 200 cookie by me and <a href="https://twitter.com/CivicWhitaker">@CivicWhitaker</a> <a href="https://t.co/kEwdenzj44">pic.twitter.com/kEwdenzj44</a></p>&mdash; Derek Eder (@derekeder) <a href="https://twitter.com/derekeder/status/720261161355096066">April 13, 2016</a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><br /></p>
+
+<p>You can see more <a href="https://www.flickr.com/search/?sort=interestingness-desc&amp;safe_search=1&amp;text=chihacknight200&amp;view_all=1">photos on Flicker</a> and <a href="https://twitter.com/search?q=chihacknight%20since%3A2016-04-12%20until%3A2016-04-13&amp;src=typd">posts on Twitter</a> under the #chihacknight200 hashtag.</p>
+
+<p>Thanks to everyone for helping us build this community! Here’s to another 200!</p>
+
+
+
+    <hr />
+
+    <h3>About the author</h3>
+
+    <div class='row'>
+      <div class='col-sm-3'>
+
+        
+          <a href='https://twitter.com/derekeder'>
+            <img class='img-rounded author-headshot hidden-phone' src='/images/people/derek_eder.jpg' alt='Derek Eder' />
+          </a>
+          <h4>
+            <a href='https://twitter.com/derekeder'>Derek Eder</a>
+          </h4>
+        
+      </div>
+      <div class='col-sm-9'>
+        <p><br />Derek is an entrepreneur, developer and one of the leaders of the civic technology community in Chicago. He is a co-founder and partner at DataMade — a company that tells stories and builds tools with data — and is the lead organizer for Chi Hack Night.</p>
+      </div>
+    </div>
+
+    
+  </div>
+  
+</div>
+
+      </div>
+    </div> <!-- /container -->
+    <footer class="footer">
+      <div class="container">
+        <div class='row'>
+          <div class='col-sm-2 col-sm-offset-1'>
+            <small>
+              <strong><a href="/events/index.html">Past events</a></strong><br />
+              <a href="/breakouts.html">Breakout groups</a><br />
+              <a href="/code-of-conduct.html">Code of Conduct</a><br />
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/blog/index.html">Blog</a></strong><br />
+              <a href="/community.html">Community</a><br />
+              <a href="/open-source-projects.html">Open source projects</a><br />
+              <a href="/data-resources.html">Data & resources</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/about.html">About</a></strong><br />
+              <a href='/team.html'>Team</a><br />
+              <a href="/leadership-council.html">Leadership Council</a><br />
+              <a href='/speaker-submissions.html'>Speaker submissions</a>
+            </small>
+          </div>
+          
+          <div class='col-sm-2'>
+            <small>
+              <strong>Elsewhere</strong><br /> 
+              <i class='fa fa-fw fa-youtube'></i> <a href="https://www.youtube.com/c/ChiHackNight">YouTube</a><br />
+              <i class='fa fa-fw fa-facebook'></i> <a href="https://www.facebook.com/chihacknight">Facebook</a><br />
+              <i class='fa fa-fw fa-twitter'></i> <a href="https://twitter.com/chihacknight" target='_blank'>Twitter</a><br />
+              <i class='fa fa-fw fa-github'></i> <a href="https://github.com/chihacknight/chihacknight.org/" target='_blank'>GitHub</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              &copy; 2018 Chi Hack Night
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

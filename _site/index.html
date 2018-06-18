@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>
+      
+      Chi Hack Night - Chicago's weekly event to build, share, and learn about civic tech.
+    </title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <meta content="Chicago's weekly event to build, share, and learn about civic tech." name='description' />
+    
+    <meta content='Chi Hack Night' name='author' />
+
+    <!-- Facebook metadata -->
+    <meta content="Chi Hack Night" property="og:site_name">
+    
+      <meta content="Chi Hack Night" property="og:title">
+    
+    
+      <meta content="website" property="og:type">
+    
+    
+      <meta content="Chicago's weekly event to build, share, and learn about civic tech." property="og:description">
+    
+    
+      <meta content="https://chihacknight.org/" property="og:url">
+    
+    
+
+    
+      <meta content="https://chihacknight.org/images/logo/logo-star-social.jpg" property="og:image">
+    
+    
+    
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Chi Hack Night">
+    <meta name="twitter:creator" content="Chi Hack Night">
+    
+      <meta name="twitter:title" content="Chi Hack Night">
+    
+    
+      <meta name="twitter:url" content="https://chihacknight.org/">
+    
+    
+      <meta name="twitter:description" content="Chicago's weekly event to build, share, and learn about civic tech.">
+    
+    
+      <meta name="twitter:image:src" content="https://chihacknight.org/images/logo/logo-star-social.jpg">
+    
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://chihacknight.org/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://chihacknight.org/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="Chi Hack Night"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://chihacknight.org/mstile-144x144.png" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.flatly.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/analytics_lib.js"></script>
+
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/dataTables.bootstrap.js"></script>
+    <script src="/js/jquery.dataTables.sorting.js"></script>
+    <script src="/js/jquery.address.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/spin.min.js"></script>
+    <script src="/js/jquery.spin.js"></script>
+    <script src="/js/jquery.scrollto.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverted navbar-static-top">
+      <div class="container">
+        <div class='col-sm-10 col-sm-offset-1'>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src='/images/logo/logo.png' alt='Chi Hack Night' title='Chi Hack Night' class='img-responsive' /></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href='/events/index.html'><i class='fa fa-calendar-o'></i> Events</a></li>
+              <li><a href='/breakouts.html'><i class='fa fa-group'></i> Breakouts</a></li>
+              <li><a href='/blog/index.html'><i class='fa fa-pencil'></i> Blog</a></li>
+              <li><a href='/projects.html'><i class='fa fa-rocket'></i> Projects</a></li>
+              <li><a href='/about.html'><i class='fa fa-info-circle'></i> About</a></li>
+              <li><a href='/donate/' class='donate'><i class='fa fa-thumbs-up'></i> Donate</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div id='primary-content' class='col-sm-10 col-sm-offset-1'>
+      
+        <div class='row'>
+  <div class='col-sm-12'>
+    <p class='h2'>Chicago's weekly event to build, share &amp; learn about civic tech<br /><br /></p>
+  </div>
+</div>
+
+<!-- Thanksgiving notice -->
+<!-- <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><b>Next Chi Hack Night</b> <a class='pull-right' href='/events/'>Past events &raquo;</a></h3>
+  </div>
+  <div class="panel-body">
+    <h2><i class='fa fa-fw fa-spoon fa-spin'></i> No Chi Hack Night on Nov 21st. Happy Thanksgiving!<i class='fa fa-fw fa-spoon fa-spin'></i></h2>
+    <p>We're taking the week of Thanksgiving off. We’ll be back again on <strong>Nov 28th, 2017</strong> with more civic hacking fun!</p>
+  </div>
+</div> -->
+
+<!-- End of year holiday notice -->
+<!-- <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><b>Next Chi Hack Night</b> <a class='pull-right' href='/events/'>Past events &raquo;</a></h3>
+  </div>
+  <div class="panel-body">
+    <h2><i class='fa fa-snowflake-o fa-spin'></i> Happy holidays! See you in 2018! <i class='fa fa-snowflake-o fa-spin'></i></h2>
+    <p>We're taking the next three weeks off due to the holidays. We’ll be back again on <strong>January 9th, 2018</strong> with more civic hacking fun! While you're waiting, <a href='/events/index.html'>check out some of our presentations</a> from the last year.</p>
+
+    <p><i class='fa fa-lightbulb-o fa-fw'></i> Would you like to propose a talk at an upcoming Chi Hack Night? Take a look at our <a href='/speaker-submissions.html'>speaker requirements</a>.</p>
+
+    <p><i class='fa fa-dollar fa-fw'></i> If your organization is interested in becoming a sponsor of Chi Hack Night in 2018, <a href='mailto:info@chihacknight.org?subject=2018 sponsorship'>drop us a line</a>!</p>
+  </div>
+</div> -->
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><b>Next Chi Hack Night</b> <a class='pull-right' href='/events/'>Past events &raquo;</a></h3>
+  </div>
+  <div class="panel-body">
+    
+    <strong>6pm Tuesday, June 19, 2018</strong>
+
+    <h2 class='no-margin-top'>
+      <small>#306</small>
+      <a href="/events/2018/06/19/ashlyn-sparrow.html">Designing Health and Social Impact Games for Chicago’s Youth</a>
+    </h2>
+    <div class='row'>
+      <div class='col-sm-7'>
+        
+          <p>Ashlyn Sparrow, Game Designer and Director of Ci3’s Game Changer Chicago Design Lab (GCC), will give a demo of Bystander and discuss the importance of integrating a youth-friendly storyline and visual design in each player scenario that touches upon critical sexual assault topics. A seasoned game designer, Ashlyn will also share why GCC is exploring health and social issues through video and analog games.</p>
+        
+        <br />
+        
+          <a class='btn btn-success btn-lg' href="http://chihacknight.eventbrite.com/" target='_blank'><i class='fa fa-check-square-o'></i> RSVP (required)</a>
+        
+        <a class='btn btn-link btn-lg' href="/events/2018/06/19/ashlyn-sparrow.html"><i class='fa fa-info-circle-square-o'></i> Details</a>
+        <a class='btn btn-link btn-lg' href="https://docs.google.com/document/d/17AdAfJfAtk4SwBZ2fpX_xmSs97hol1MKrd7KPhPNcEM/edit#" target='_blank'><i class='fa fa-file-text-o'></i> Agenda</a>
+      </div>
+      <div class='col-sm-5'>
+        
+          <a href="/events/2018/06/19/ashlyn-sparrow.html"><img class='img-responsive img-thumbnail' src='/images/events/306-bystander.jpg' alt='Designing Health and Social Impact Games for Chicago’s Youth' /></a>
+          
+        
+      </div>
+    </div>
+      
+  </div>
+</div>
+
+
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><b>Next Community Event</b></h3>
+      </div>
+      <div class="panel-body">
+        <strong>6pm Thursday, June 21, 2018</strong>
+
+        <h2 class='no-margin-top'>
+          <a href="/satellite/2018/06/21/logan-hack-night-5.html">You Matter, State Matters</a>
+        </h2>
+        <div class='row'>
+          <div class='col-sm-7'>
+            
+              <p>Kacie Smith and others from State Matters will lead a discussion about the importance and effect of state politics and how to raise awareness of how local issues are represented on our ballot. </p>
+            
+            <br />
+            
+              <a class='btn btn-success btn-lg' href="" target='_blank'><i class='fa fa-check-square-o'></i> RSVP</a>
+            
+            <a class='btn btn-link btn-lg' href="/satellite/2018/06/21/logan-hack-night-5.html"><i class='fa fa-info-circle-square-o'></i> Details</a>
+            <a class='btn btn-link btn-lg' href="https://docs.google.com/document/d/17FYzTP8gWUwrlSLj-VIGN2iqXWohUPFiRvnsuBpdrL0/edit#" target='_blank'><i class='fa fa-file-text-o'></i> Agenda</a>
+          </div>
+          <div class='col-sm-5'>
+            
+              <a href="/satellite/2018/06/21/logan-hack-night-5.html"><img class='img-responsive img-thumbnail' src='/images/events/satellite/logan-sat-event.jpg' alt='You Matter, State Matters' /></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><b>Latest blog post</b> <a class='pull-right' href='/blog/'>All posts &raquo;</a></h3>
+  </div>
+  <div class="panel-body">
+    
+      <div class='row'>
+        <div class='col-sm-4'>
+          
+            <img class='img-thumbnail img-responsive' src='/images/blog/wttw-chn-300.jpg' alt='Chi Hack Night on WTTW Chicago Tonight' />
+          
+        </div>
+        <div class='col-sm-8'>
+          <h4>
+            <a href='/blog/2018/05/18/wttw-chicago-tonight.html'>Chi Hack Night on WTTW Chicago Tonight</a>
+          </h4>
+          <p>
+            <small>May 18, 2018 by
+              <a class='muted' href='https://twitter.com/derekeder'>Derek Eder</a>
+              
+            </small>
+            <br />
+            <p>On May 16, 2018 WTTW Chicago Tonight featured Chi Hack Night on their program. The segment covered our 300th event and included interviews with a cross-section of our community.</p>
+ <a href='/blog/2018/05/18/wttw-chicago-tonight.html'>Read&nbsp;more&nbsp;&raquo;</a>
+          </p>
+          <br />
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+<div class='row'>
+  <div class='col-sm-12'>
+
+    <h2 id='about'>Welcome!</h2>
+
+    <p><iframe frameborder="0" height="450" src="https://www.youtube.com/embed/j3Ltxgiw46o" width="100%"></iframe></p>
+
+    <p>Join us every Tuesday from 6-10pm on the 8th floor of the Merchandise Mart to hear from <a href='/events/index.html'>amazing speakers</a>, <a href='/breakouts.html#learning'>learn from each other</a> and <a href='/breakouts.html#working'>work on civic projects</a>. <a href='/about.html#everyone'><strong>Everyone is welcome!</strong></a></p>
+
+    <p>We are a group of thousands of designers, academic researchers, data journalists, activists, policy wonks, web developers and curious citizens who want to make our city more just, equitable, transparent and delightful to live in through data, design and technology. <a href='/about.html'>More about us »</a></p>
+
+    <hr />
+    <h2 id='community'>Join our community</h2>
+
+    <p>Chi Hack Night is a central hub for <a href='/community.html'>Chicago's civic tech community</a>. Here's the three best ways to get involved:</p>
+
+    <div class='row text-center'>
+      <div class='col-sm-4'>
+        <div class='well'>
+          <h1><i class='fa fa-fw fa-calendar'></i></h1>
+          <p>1. Go to Chi Hack Night. <a href='http://chihacknight.eventbrite.com/'>We meet every Tuesday at 6pm</a></p>
+        </div>
+      </div>
+
+      <div class='col-sm-4'>
+        <div class='well'>
+          <h1><i class='fa fa-fw fa-envelope'></i></h1>
+          <p>2. <a href='http://eepurl.com/z65hn'>Subscribe to updates</a> on upcoming speakers and events</p>
+        </div>
+      </div>
+
+      <div class='col-sm-4'>
+        <div class='well'>
+          <h1><i class='fa fa-fw fa-group'></i></h1>
+          <p>3. Browse our <a href='/breakouts.html'>weekly breakouts</a> to find your group</p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <div class='sponsors'>
+
+      <h2 id='sponsors'>Sponsors</h2>
+      <p>Chi Hack Night is organized by Derek Eder, Emily Drevets, Katie O'Shea and members of our <a href='/leadership-council.html'>Leadership Council</a>, hosted at <a href='https://www.braintreepayments.com/'>Braintree</a> and supported by our amazing sponsors. DataMade is the fiscal sponsor.</p>
+
+      <p>Is your organization interested in becoming a Chi Hack Night sponsor? <a href='mailto:info@chihacknight.org'>Drop us a line!</a></p>
+
+      <div class='row'>
+        <div class='col-sm-2'>
+          <h4 class='sponsor-level'>4-Star</h4>
+        </div>
+
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='https://www.braintreepayments.com/' itemprop='url'>
+                <img src='images/sponsors/braintree.png' alt='Braintree' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>Braintree</span>
+            </a>
+          </div>
+        </div>
+
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='https://microsoft-chicago.com' itemprop='url'>
+                <img src='images/sponsors/microsoft.png' alt='Microsoft' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>Microsoft</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-2'>
+          <h4 class='sponsor-level'>3-Star</h4>
+        </div>
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='https://datamade.us' itemprop='url'>
+                <img src='images/sponsors/datamade.png' alt='DataMade' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>DataMade</span>
+            </a>
+          </div>
+        </div>
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='https://google.com/' itemprop='url'>
+                <img src='images/sponsors/google.png' alt='Google' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>Google</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class='row'>
+        <div class='col-sm-2'>
+          <h4 class='sponsor-level'>2-Star</h4>
+        </div>
+
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='http://thecitybase.com' itemprop='url'>
+                <img src='images/sponsors/citybase.jpg' alt='City Base' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>City Base</span>
+            </a>
+          </div>
+        </div>
+
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='https://opentechstrategies.com' itemprop='url'>
+                <img src='images/sponsors/open-tech-strategies.png' alt='Open Tech Strategies' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>Open Tech Strategies</span>
+            </a>
+          </div>
+        </div>
+
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='https://www.civisanalytics.com' itemprop='url'>
+                <img src='images/sponsors/civis-analytics.png' alt='Civis Analytics' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>Civis Analytics</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2 star row 2 -->
+      <!-- <div class='row'>
+        <div class='col-sm-2'>
+        </div>
+
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='https://edelson.com/' itemprop='url'>
+                <img src='images/sponsors/edelson.jpg' alt='Edelson' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>Edelson</span>
+            </a>
+          </div>
+        </div>
+      </div> -->
+
+      <div class='row'>
+        <div class='col-sm-2'>
+          <h4 class='sponsor-level'>1-Star</h4>
+        </div>
+
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='https://www.mrelief.com' itemprop='url'>
+                <img src='images/sponsors/mrelief.png' alt='mRelief' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>mRelief</span>
+            </a>
+          </div>
+        </div>
+
+        <div class='col-sm-3'>
+          <div itemscope itemtype='http://schema.org/Organization' class='sponsor-details'>
+            <a href='https://www.chicagocityscape.com' itemprop='url'>
+                <img src='images/sponsors/chicagocityscape.jpg' alt='Chicago Cityscape' itemprop='logo' class='img-responsive' />
+                <span itemprop='name'>Chicago Cityscape</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </div> <!-- /container -->
+    <footer class="footer">
+      <div class="container">
+        <div class='row'>
+          <div class='col-sm-2 col-sm-offset-1'>
+            <small>
+              <strong><a href="/events/index.html">Past events</a></strong><br />
+              <a href="/breakouts.html">Breakout groups</a><br />
+              <a href="/code-of-conduct.html">Code of Conduct</a><br />
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/blog/index.html">Blog</a></strong><br />
+              <a href="/community.html">Community</a><br />
+              <a href="/open-source-projects.html">Open source projects</a><br />
+              <a href="/data-resources.html">Data & resources</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/about.html">About</a></strong><br />
+              <a href='/team.html'>Team</a><br />
+              <a href="/leadership-council.html">Leadership Council</a><br />
+              <a href='/speaker-submissions.html'>Speaker submissions</a>
+            </small>
+          </div>
+          
+          <div class='col-sm-2'>
+            <small>
+              <strong>Elsewhere</strong><br /> 
+              <i class='fa fa-fw fa-youtube'></i> <a href="https://www.youtube.com/c/ChiHackNight">YouTube</a><br />
+              <i class='fa fa-fw fa-facebook'></i> <a href="https://www.facebook.com/chihacknight">Facebook</a><br />
+              <i class='fa fa-fw fa-twitter'></i> <a href="https://twitter.com/chihacknight" target='_blank'>Twitter</a><br />
+              <i class='fa fa-fw fa-github'></i> <a href="https://github.com/chihacknight/chihacknight.org/" target='_blank'>GitHub</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              &copy; 2018 Chi Hack Night
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>
+      
+        Post-election community feedback results - 
+      
+      Chi Hack Night - Chicago's weekly event to build, share, and learn about civic tech.
+    </title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <meta content="On November 15, 2016, Chi Hack Night held a post-election community feedback session.  It was our largest Chi Hack Night ever with over 165 attendees. Read through the full results and see how our community is planning to adapt to America's new political reality." name='description' />
+    
+    <meta content='Chi Hack Night' name='author' />
+
+    <!-- Facebook metadata -->
+    <meta content="Chi Hack Night" property="og:site_name">
+    
+      <meta content="Post-election community feedback results - Chi Hack Night" property="og:title">
+    
+    
+      <meta content="article" property="og:type">
+    
+    
+      <meta content="On November 15, 2016, Chi Hack Night held a post-election community feedback session.  It was our largest Chi Hack Night ever with over 165 attendees. Read through the full results and see how our community is planning to adapt to America's new political reality." property="og:description">
+    
+    
+      <meta content="https://chihacknight.org/blog/2016/11/26/post-election-community-feedback-results.html" property="og:url">
+    
+    
+      <meta content="2016-11-26T00:00:00-06:00" property="article:published_time">
+      <meta content="https://chihacknight.org/about-us/" property="article:author">
+    
+
+    
+      <meta content="https://chihacknight.org/images/blog/2016-11-25-post-election-feedback/img1.jpg" property="og:image">
+    
+    
+      
+      <meta content="blog" property="article:section">
+      
+    
+    
+      
+    
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Chi Hack Night">
+    <meta name="twitter:creator" content="Chi Hack Night">
+    
+      <meta name="twitter:title" content="Post-election community feedback results">
+    
+    
+      <meta name="twitter:url" content="https://chihacknight.org/blog/2016/11/26/post-election-community-feedback-results.html">
+    
+    
+      <meta name="twitter:description" content="On November 15, 2016, Chi Hack Night held a post-election community feedback session.  It was our largest Chi Hack Night ever with over 165 attendees. Read through the full results and see how our community is planning to adapt to America's new political reality.">
+    
+    
+      <meta name="twitter:image" content="https://chihacknight.org/images/blog/2016-11-25-post-election-feedback/img1.jpg">
+    
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://chihacknight.org/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://chihacknight.org/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="Chi Hack Night"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://chihacknight.org/mstile-144x144.png" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.flatly.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/analytics_lib.js"></script>
+
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/dataTables.bootstrap.js"></script>
+    <script src="/js/jquery.dataTables.sorting.js"></script>
+    <script src="/js/jquery.address.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/spin.min.js"></script>
+    <script src="/js/jquery.spin.js"></script>
+    <script src="/js/jquery.scrollto.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverted navbar-static-top">
+      <div class="container">
+        <div class='col-sm-10 col-sm-offset-1'>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src='/images/logo/logo.png' alt='Chi Hack Night' title='Chi Hack Night' class='img-responsive' /></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href='/events/index.html'><i class='fa fa-calendar-o'></i> Events</a></li>
+              <li><a href='/breakouts.html'><i class='fa fa-group'></i> Breakouts</a></li>
+              <li><a href='/blog/index.html'><i class='fa fa-pencil'></i> Blog</a></li>
+              <li><a href='/projects.html'><i class='fa fa-rocket'></i> Projects</a></li>
+              <li><a href='/about.html'><i class='fa fa-info-circle'></i> About</a></li>
+              <li><a href='/donate/' class='donate'><i class='fa fa-thumbs-up'></i> Donate</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div id='primary-content' class='col-sm-10 col-sm-offset-1'>
+      
+        <div class='row'>
+  <div class="col-sm-12 post">
+    <h2>
+      Post-election community feedback results
+    </h2>
+    <p class='muted'>
+      Published on Nov 26, 2016 by
+      Derek Eder
+      
+    </p>
+
+    <p class="text-center"><img src="/images/blog/2016-11-25-post-election-feedback/img1.jpg" alt="Reading out the results of the Post-election community feedback session at Chi Hack Night" class="img-thumbnail" /><br />
+
+<small>
+    <em>Reading out the results of the <a href="https://chihacknight.org/events/2016/11/15/post-election-community-feedback-session.html">Post-election community feedback session</a> at Chi Hack Night</em>
+</small>
+</p>
+
+<p>On November 15, 2016, Chi Hack Night held a post-election community feedback session. It was our largest Chi Hack Night ever with over <strong>165 attendees</strong>. Thank you to everyone for participating!</p>
+
+<p>Many ideas were discussed, new relationships were made, and feelings were shared. But most of all, it just felt good to be in a room full of people who wanted to collaborate and work towards improving the public good.</p>
+
+<p>Going into it, we had several goals for the event, all of which we believe we were able to achieve.</p>
+
+<p>The goals were:</p>
+
+<ul>
+  <li>To take the ‘temperature’ of our community after a major consequential event</li>
+  <li>To identify topics &amp; ideas of shared interest</li>
+  <li>To bring in a broader pool of people to Chi Hack Night</li>
+  <li>To create opportunities for new relationships &amp; working groups to form</li>
+</ul>
+
+<h2 id="organizing-the-community">Organizing the community</h2>
+
+<p>Community feedback was structured around four broad post-election questions:</p>
+
+<ol>
+  <li>
+    <p>How are you feeling about community and government right now?</p>
+  </li>
+  <li>
+    <p>There is a lot of anger and resentment in Chicago and America today. How can we as a community of civic technologists direct it towards positive action?</p>
+  </li>
+  <li>
+    <p>What don’t you understand about our government and civil society that you’d like to learn more about?</p>
+  </li>
+  <li>
+    <p>What groups or organizations need help the most, and how can we help them?</p>
+  </li>
+</ol>
+
+<p>To give everyone an opportunity to give feedback, we wrote each question on a dry-erase board and split everyone up into four separate groups. Each group went to a whiteboard with a topic written at the top and given sticky notes to write their ideas under each one. After 7 minutes, the groups would rotate and move on to the next topic.</p>
+
+<p class="text-center"><img src="/images/blog/2016-11-25-post-election-feedback/img2.jpg" alt="Derek Eder and facilitators Jean Cochrane, Karl Fogel, Genevieve Nielsen, Kristi Leach" class="img-thumbnail" /><br />
+
+<small>
+    <em>Derek Eder and facilitators Jean Cochrane, Karl Fogel, Genevieve Nielsen, Kristi Leach</em>
+</small>
+</p>
+
+<p>After rotating four times, we met back in the main auditorium and each facilitator summarized the highlights from each board.</p>
+
+<p>Immediately following the feedback session, the Chi Hack Night <a href="http://chihacknight.org/leadership-council.html">Leadership Council</a> met to record and synthesize the results.</p>
+
+<p class="text-center"><img src="/images/blog/2016-11-25-post-election-feedback/img3.jpg" alt="Karl Fogel facilitates group 2" class="img-thumbnail" /><br />
+
+<small>
+    <em>Karl Fogel facilitates group 2</em>
+</small>
+</p>
+
+<h2 id="results-the-broad-themes">Results: the broad themes</h2>
+
+<p>All of the raw feedback has now been <a href="https://docs.google.com/document/d/1LcB5wI43AM7sKwJ7FGJhTVJosH6egBcKKkioSgfoG4w/edit">recorded in a Google doc</a>. Comments &amp; suggestions are still welcome, so feel free to add your feedback as well.</p>
+
+<p>Here are the broad themes from each question.</p>
+
+<p><strong>1. How are you feeling about community and government right now?</strong></p>
+
+<ul>
+  <li>A loss of faith in institutions / disenfranchisement
+    <ul>
+      <li>To address this, open data &amp; civic tech can help reveal what’s working well</li>
+      <li>The presence of data makes having ‘faith’ less relevant. The value can be empirically shown.</li>
+    </ul>
+  </li>
+  <li>Feelings: This sucks / frustration / uncertainty</li>
+  <li>What will open data look like in the Trump Administration?</li>
+  <li>It’s hard to communicate across party &amp; cultural lines</li>
+</ul>
+
+<p class="text-center"><img src="/images/blog/2016-11-25-post-election-feedback/img5-1.jpg" alt="Question 1: How are you feeling about community and government right now?" class="img-thumbnail" style="width: 70%;" /><br />
+
+<small>
+    <em>Question 1: How are you feeling about community and government right now?</em>
+</small>
+</p>
+
+<p><strong>2. There is a lot of anger and resentment in Chicago and America today. How can we as a community of civic technologies direct it towards positive action?</strong></p>
+
+<ul>
+  <li>We can design neighborhood and community forums</li>
+  <li>Fight to end echo chambers</li>
+  <li>Publicize civic apps that already exist</li>
+  <li>How to convey tone in social media?</li>
+  <li>Combating fake news: truth ratings or fact checkers</li>
+  <li>Protect the most vulnerable in our society</li>
+</ul>
+
+<p class="text-center"><img src="/images/blog/2016-11-25-post-election-feedback/img5-2.jpg" alt="Question 2: There is a lot of anger and resentment in Chicago and America today. How can we as a community of civic technologies direct it towards positive action?" class="img-thumbnail" style="width: 70%;" /><br />
+
+<small>
+    <em>Question 2: There is a lot of anger and resentment in Chicago and America today. How can we as a community of civic technologies direct it towards positive action?</em>
+</small>
+</p>
+
+<p><strong>3. What don’t you understand about our government and civil society that you’d like to learn more about?</strong></p>
+
+<ul>
+  <li>The voting process</li>
+  <li>How does government work?</li>
+  <li>How to participate more in government</li>
+</ul>
+
+<p class="text-center"><img src="/images/blog/2016-11-25-post-election-feedback/img5-3.jpg" alt="Question 3: What don't you understand about our government and civil society that you'd like to learn more about?" class="img-thumbnail" style="width: 70%;" /><br />
+
+<small>
+    <em>Question 3: What don't you understand about our government and civil society that you'd like to learn more about?</em>
+</small>
+</p>
+
+<p><strong>4. What groups or organizations need help the most and how can we help them?</strong></p>
+
+<p>Who needs help?</p>
+
+<ul>
+  <li>The LGBTQ community</li>
+  <li>Women</li>
+  <li>Residents of the rust belt</li>
+  <li>Local grassroots organizations</li>
+  <li>Climate change victims</li>
+  <li>Immigrants</li>
+  <li>Recipients of government services</li>
+  <li>Targets of Islamophobia</li>
+</ul>
+
+<p>How can we help them?</p>
+
+<ul>
+  <li>Consider alternatives to the false equivalency: those who help and those who are helped</li>
+  <li>Don’t re-invent the wheel:
+    <ul>
+      <li>Connect people with other people, including connect ChiHackNight with other existing communities</li>
+      <li>Breaking down echo chambers (bridging urban-rural, bridging race, bridging etc)</li>
+      <li>Provide support
+        <ul>
+          <li>Discussion</li>
+          <li>Safe spaces</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Connect people (especially marginalized groups) with resources/information
+    <ul>
+      <li>Create guides</li>
+      <li>Encourage civic engagement by lowering barriers to entry</li>
+    </ul>
+  </li>
+</ul>
+
+<p class="text-center"><img src="/images/blog/2016-11-25-post-election-feedback/img5-4.jpg" alt="Question 4: What groups or organizations need help the most and how can we help them?" class="img-thumbnail" style="width: 70%;" /><br />
+
+<small>
+    <em>Question 4: What groups or organizations need help the most and how can we help them?</em>
+</small>
+</p>
+
+<h2 id="synthesis-chi-hack-nights-goals--values">Synthesis: Chi Hack Night’s goals &amp; values</h2>
+
+<p>After reading through the feedback, the Chi Hack Night Leadership Council identified the <strong>goals</strong> that we as a community should now strive towards.</p>
+
+<p>Chi Hack Night will strive to:</p>
+
+<ol>
+  <li>Be a <strong>space for discussion</strong> and cross-sector connections</li>
+  <li><strong>Restore faith</strong> in our government and civic institutions</li>
+  <li>Commit to <strong>fight disenfranchisement</strong></li>
+  <li><strong>Facilitate community conversations</strong> online, offline &amp; across political, social and geographic boundaries</li>
+  <li>Commit to an aggressive campaign to <strong>diversify Chi Hack Night</strong></li>
+  <li><strong>Get outside of our civic tech bubble</strong>
+    <ul>
+      <li>Look into satellite / partner events</li>
+      <li>Develop Chi Hack Night press kit to broaden our reach</li>
+    </ul>
+  </li>
+  <li>Through our presenters and breakout groups, seek to improve:
+    <ul>
+      <li><strong>Digital skills</strong> (development, implementation, data, cryptography)</li>
+      <li><strong>Civic literacy</strong> (how government works and how to participate)</li>
+      <li><strong>Media literacy</strong> (data journalism, visualization)</li>
+    </ul>
+  </li>
+  <li><strong>Provide expertise</strong> and guidance on the ethics of using open data &amp; building technology</li>
+  <li><strong>Maximize our impact</strong> through specialization (tech, policy, events, trainings)</li>
+</ol>
+
+<p>We also revisited our <strong>core values</strong> as a group. To re-affirm, Chi Hack Night is:</p>
+
+<ul>
+  <li>A safe space where all are welcome regardless of race, religion, creed, political ideology or technical ability</li>
+  <li>Governed by the community, open and accountable</li>
+  <li>In service of the entire Chicago-land region</li>
+  <li>Non-partisan, but not neutral</li>
+</ul>
+
+<p class="text-center"><img src="/images/blog/2016-11-25-post-election-feedback/img4.jpg" alt="Group 4 discusses in the Braintree cafeteria" class="img-thumbnail" /><br />
+
+<small>
+    <em>Group 4 discusses in the Braintree cafeteria</em>
+</small>
+</p>
+
+<h2 id="onward">Onward</h2>
+
+<p>America is a different place than it was less than a month ago. And with this change, Chi Hack Night itself will adapt. It’s what we’ve always done since we started over 4 ½ years ago, from <a href="https://chihacknight.org/blog/2015/05/12/introducing-chi-hack-night.html">rebranding</a>, to <a href="https://chihacknight.org/blog/2015/12/22/chi-hack-night-2015-year-in-review.html">moving spaces</a> to <a href="https://chihacknight.org/blog/2015/01/06/open-gov-hack-night-2014-year-in-review.html">forming our leadership council</a>. This is just the latest iteration, and it will not be our last.</p>
+
+<p>On this Thanksgiving break, it’s also important to remember and be thankful for the community we have built. It is something that 165 people spent their Tuesday night with us collaborating, networking, learning and building.</p>
+
+<p>Our melting pot of technologists, journalists, researchers, government workers, students, advocates and curious citizens creates a space for innovation and collaboration that is both rare and valuable. Our mission to use data and technology to support, and serve the public good is more important now than it ever was.</p>
+
+<p>Now let’s get to work. Thank you again to everyone for participating. And, as always, we’ll see you next Tuesday!</p>
+
+
+    <hr />
+
+    <h3>About the author</h3>
+
+    <div class='row'>
+      <div class='col-sm-3'>
+
+        
+          <a href='https://twitter.com/derekeder'>
+            <img class='img-rounded author-headshot hidden-phone' src='/images/people/derek_eder.jpg' alt='Derek Eder' />
+          </a>
+          <h4>
+            <a href='https://twitter.com/derekeder'>Derek Eder</a>
+          </h4>
+        
+      </div>
+      <div class='col-sm-9'>
+        <p><br />Derek is an entrepreneur, developer and one of the leaders of the civic technology community in Chicago. He is a co-founder and partner at DataMade — a company that tells stories and builds tools with data — and is the lead organizer for Chi Hack Night.</p>
+      </div>
+    </div>
+
+    
+  </div>
+  
+</div>
+
+      </div>
+    </div> <!-- /container -->
+    <footer class="footer">
+      <div class="container">
+        <div class='row'>
+          <div class='col-sm-2 col-sm-offset-1'>
+            <small>
+              <strong><a href="/events/index.html">Past events</a></strong><br />
+              <a href="/breakouts.html">Breakout groups</a><br />
+              <a href="/code-of-conduct.html">Code of Conduct</a><br />
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/blog/index.html">Blog</a></strong><br />
+              <a href="/community.html">Community</a><br />
+              <a href="/open-source-projects.html">Open source projects</a><br />
+              <a href="/data-resources.html">Data & resources</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/about.html">About</a></strong><br />
+              <a href='/team.html'>Team</a><br />
+              <a href="/leadership-council.html">Leadership Council</a><br />
+              <a href='/speaker-submissions.html'>Speaker submissions</a>
+            </small>
+          </div>
+          
+          <div class='col-sm-2'>
+            <small>
+              <strong>Elsewhere</strong><br /> 
+              <i class='fa fa-fw fa-youtube'></i> <a href="https://www.youtube.com/c/ChiHackNight">YouTube</a><br />
+              <i class='fa fa-fw fa-facebook'></i> <a href="https://www.facebook.com/chihacknight">Facebook</a><br />
+              <i class='fa fa-fw fa-twitter'></i> <a href="https://twitter.com/chihacknight" target='_blank'>Twitter</a><br />
+              <i class='fa fa-fw fa-github'></i> <a href="https://github.com/chihacknight/chihacknight.org/" target='_blank'>GitHub</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              &copy; 2018 Chi Hack Night
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

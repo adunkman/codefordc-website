@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>
+      
+        Using Data to Close the Safety Net Participation Gap in NYC - 
+      
+      Chi Hack Night - Chicago's weekly event to build, share, and learn about civic tech.
+    </title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <meta content="Kelly Kreft, Advik Shreekumar, and Ola Topczewska of Civis Analytics join us to talk about how their modeling work helped explore usage of SNAP and EITC public benefits in New York City." name='description' />
+    
+    <meta content='Chi Hack Night' name='author' />
+
+    <!-- Facebook metadata -->
+    <meta content="Chi Hack Night" property="og:site_name">
+    
+      <meta content="Using Data to Close the Safety Net Participation Gap in NYC - Chi Hack Night" property="og:title">
+    
+    
+      <meta content="article" property="og:type">
+    
+    
+      <meta content="Kelly Kreft, Advik Shreekumar, and Ola Topczewska of Civis Analytics join us to talk about how their modeling work helped explore usage of SNAP and EITC public benefits in New York City." property="og:description">
+    
+    
+      <meta content="https://chihacknight.org/events/2017/05/23/civisanalytics.html" property="og:url">
+    
+    
+      <meta content="2017-05-23T19:00:00-05:00" property="article:published_time">
+      <meta content="https://chihacknight.org/about-us/" property="article:author">
+    
+
+    
+      <meta content="https://chihacknight.org/images/events/255-civis.png" property="og:image">
+    
+    
+      
+      <meta content="events" property="article:section">
+      
+    
+    
+      
+      <meta content="govtech" property="article:tag">
+      
+      <meta content="socal services" property="article:tag">
+      
+    
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Chi Hack Night">
+    <meta name="twitter:creator" content="Chi Hack Night">
+    
+      <meta name="twitter:title" content="Using Data to Close the Safety Net Participation Gap in NYC">
+    
+    
+      <meta name="twitter:url" content="https://chihacknight.org/events/2017/05/23/civisanalytics.html">
+    
+    
+      <meta name="twitter:description" content="Kelly Kreft, Advik Shreekumar, and Ola Topczewska of Civis Analytics join us to talk about how their modeling work helped explore usage of SNAP and EITC public benefits in New York City.">
+    
+    
+      <meta name="twitter:image" content="https://chihacknight.org/images/events/255-civis.png">
+    
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://chihacknight.org/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://chihacknight.org/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="Chi Hack Night"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://chihacknight.org/mstile-144x144.png" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.flatly.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/analytics_lib.js"></script>
+
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/dataTables.bootstrap.js"></script>
+    <script src="/js/jquery.dataTables.sorting.js"></script>
+    <script src="/js/jquery.address.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/spin.min.js"></script>
+    <script src="/js/jquery.spin.js"></script>
+    <script src="/js/jquery.scrollto.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverted navbar-static-top">
+      <div class="container">
+        <div class='col-sm-10 col-sm-offset-1'>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src='/images/logo/logo.png' alt='Chi Hack Night' title='Chi Hack Night' class='img-responsive' /></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href='/events/index.html'><i class='fa fa-calendar-o'></i> Events</a></li>
+              <li><a href='/breakouts.html'><i class='fa fa-group'></i> Breakouts</a></li>
+              <li><a href='/blog/index.html'><i class='fa fa-pencil'></i> Blog</a></li>
+              <li><a href='/projects.html'><i class='fa fa-rocket'></i> Projects</a></li>
+              <li><a href='/about.html'><i class='fa fa-info-circle'></i> About</a></li>
+              <li><a href='/donate/' class='donate'><i class='fa fa-thumbs-up'></i> Donate</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div id='primary-content' class='col-sm-10 col-sm-offset-1'>
+      
+        <div itemscope itemtype="http://schema.org/Event">
+  <h3>
+    <a href='/events'>Events</a> > <time itemprop="startDate" datetime=2017-05-23>May 23, 2017</time>
+  </h3>
+  <h1>
+    <small>#255</small>
+    <span itemprop="name">Using Data to Close the Safety Net Participation Gap in NYC</span>
+  </h1>
+  <hr />
+
+  <div class='row'>
+    
+      <div class='col-sm-12'> 
+    
+
+      
+        <iframe width="100%" height="580" src="https://www.youtube.com/embed/XSQOCXwNqUA" frameborder="0" allowfullscreen></iframe>
+        <hr />
+      
+
+      
+
+      <span itemprop="description"><p>In 2016, <a href="https://www.civisanalytics.com/">Civis Analytics’</a> Applied Data Science team worked with the <a href="https://www.robinhood.org/">Robin Hood Foundation</a>, one of the largest poverty-fighting foundations in New York City, to find out which neighborhoods in New York City were under-participating in two public benefits: SNAP, formerly known as food stamps, and the Earned Income Tax Credit.</p>
+
+<p>In order to help the Robin Hood Foundation figure out how best to target its resources and do outreach through canvassing and community organizing, Civis used Census data from the <a href="https://www.census.gov/programs-surveys/acs/">American Community Survey</a> to identify which areas had a high number of eligible participants who were not claiming benefits.</p>
+
+<p>Civis used models to improve our estimates and bring in additional information about the communities. In this talk, Kelly Kreft, Advik Shreekumar, and Ola Topczewska will discuss how they approached the problem, data and modeling challenges we encountered along the way, and introduce some of the findings from their work.</p>
+</span>
+
+      
+
+      <hr />
+      
+        <i class='fa fa-file-text-o fa-fw'></i> <a href='https://docs.google.com/document/d/1ueik_hJzJUif8NapH6vVG7q7YwduPaZUBZ1p6jw46d4/edit#' target='_blank'>Agenda and meeting notes</a><br />
+      
+      
+      <i class='fa fa-cutlery fa-fw'></i> Sponsor <a href='https://twilio.com/'>Twilio</a><br />
+      
+
+      
+    </div>
+    
+  </div>
+</div>
+
+<div class='row'>
+  <div class='col-sm-12'>
+
+    <hr />
+    <h4 id='slideshow-header' style='display: none;'>Flickr photos from Chi Hack Night #255</h4>
+    <div class='slideshow'></div>
+    <p>Have a photo of this event? Upload it to <a href='http://flickr.com'>Flickr</a> and tag it with <strong><a href='https://www.flickr.com/search/?tags=chihacknight255'>chihacknight255</a></strong></p>
+
+    <script src="/js/galleria/galleria.js"></script>
+    <script src="/js/galleria/plugins/flickr/galleria.flickr.js"></script>
+    <script>
+      var flickr = new Galleria.Flickr();
+        flickr.tags('chihacknight-255, chihacknight255', function(data) {
+            // Should we show or hide the slideshow?
+            var $slideshow = $(".slideshow");
+            if (data.length) {
+              $slideshow.css({height: 600, marginBottom: 20});
+              $('#slideshow-header').show()
+            } else {
+              $slideshow.hide();
+            }
+
+            Galleria.loadTheme('/js/galleria/themes/classic/galleria.classic.js');
+            Galleria.run('.slideshow', {
+                dataSource: data
+            });
+        });
+    </script>
+  </div>
+</div>
+
+
+      </div>
+    </div> <!-- /container -->
+    <footer class="footer">
+      <div class="container">
+        <div class='row'>
+          <div class='col-sm-2 col-sm-offset-1'>
+            <small>
+              <strong><a href="/events/index.html">Past events</a></strong><br />
+              <a href="/breakouts.html">Breakout groups</a><br />
+              <a href="/code-of-conduct.html">Code of Conduct</a><br />
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/blog/index.html">Blog</a></strong><br />
+              <a href="/community.html">Community</a><br />
+              <a href="/open-source-projects.html">Open source projects</a><br />
+              <a href="/data-resources.html">Data & resources</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/about.html">About</a></strong><br />
+              <a href='/team.html'>Team</a><br />
+              <a href="/leadership-council.html">Leadership Council</a><br />
+              <a href='/speaker-submissions.html'>Speaker submissions</a>
+            </small>
+          </div>
+          
+          <div class='col-sm-2'>
+            <small>
+              <strong>Elsewhere</strong><br /> 
+              <i class='fa fa-fw fa-youtube'></i> <a href="https://www.youtube.com/c/ChiHackNight">YouTube</a><br />
+              <i class='fa fa-fw fa-facebook'></i> <a href="https://www.facebook.com/chihacknight">Facebook</a><br />
+              <i class='fa fa-fw fa-twitter'></i> <a href="https://twitter.com/chihacknight" target='_blank'>Twitter</a><br />
+              <i class='fa fa-fw fa-github'></i> <a href="https://github.com/chihacknight/chihacknight.org/" target='_blank'>GitHub</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              &copy; 2018 Chi Hack Night
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

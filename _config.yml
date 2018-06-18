@@ -1,0 +1,11 @@
+port:  4000
+markdown: kramdown
+name: Chi Hack Night
+url: https://chihacknight.org
+title: Chi Hack Night
+description: "Chicago's weekly event to build, share, and learn about civic tech."
+encoding: utf-8
+timezone: America/Chicago
+gems:
+  - jekyll-redirect-from
+future: true

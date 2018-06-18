@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>
+      
+        Slow Roll Chicago - Bike Equity Project - 
+      
+      Chi Hack Night - Chicago's weekly event to build, share, and learn about civic tech.
+    </title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <meta content="Visualization and analysis of Chicago bike lanes. An effort to show the distribution of bike infrastructure investments in Chicago, while at the same time showing how those were related to socioeconomic and health indicators. " name='description' />
+    
+    <meta content='Chi Hack Night' name='author' />
+
+    <!-- Facebook metadata -->
+    <meta content="Chi Hack Night" property="og:site_name">
+    
+      <meta content="Slow Roll Chicago - Bike Equity Project - Chi Hack Night" property="og:title">
+    
+    
+      <meta content="article" property="og:type">
+    
+    
+      <meta content="Visualization and analysis of Chicago bike lanes. An effort to show the distribution of bike infrastructure investments in Chicago, while at the same time showing how those were related to socioeconomic and health indicators. " property="og:description">
+    
+    
+      <meta content="https://chihacknight.org/projects/2015/06/01/chicago-bike-equity.html" property="og:url">
+    
+    
+      <meta content="2015-06-01T00:00:00-05:00" property="article:published_time">
+      <meta content="https://chihacknight.org/about-us/" property="article:author">
+    
+
+    
+      <meta content="https://chihacknight.org/images/projects/chicago-bike-equity.jpg" property="og:image">
+    
+    
+      
+      <meta content="projects" property="article:section">
+      
+    
+    
+      
+      <meta content="Issue advocacy" property="article:tag">
+      
+      <meta content="Mapping" property="article:tag">
+      
+    
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Chi Hack Night">
+    <meta name="twitter:creator" content="Chi Hack Night">
+    
+      <meta name="twitter:title" content="Slow Roll Chicago - Bike Equity Project">
+    
+    
+      <meta name="twitter:url" content="https://chihacknight.org/projects/2015/06/01/chicago-bike-equity.html">
+    
+    
+      <meta name="twitter:description" content="Visualization and analysis of Chicago bike lanes. An effort to show the distribution of bike infrastructure investments in Chicago, while at the same time showing how those were related to socioeconomic and health indicators. ">
+    
+    
+      <meta name="twitter:image" content="https://chihacknight.org/images/projects/chicago-bike-equity.jpg">
+    
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://chihacknight.org/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://chihacknight.org/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="Chi Hack Night"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://chihacknight.org/mstile-144x144.png" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.flatly.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/analytics_lib.js"></script>
+
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/dataTables.bootstrap.js"></script>
+    <script src="/js/jquery.dataTables.sorting.js"></script>
+    <script src="/js/jquery.address.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/spin.min.js"></script>
+    <script src="/js/jquery.spin.js"></script>
+    <script src="/js/jquery.scrollto.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverted navbar-static-top">
+      <div class="container">
+        <div class='col-sm-10 col-sm-offset-1'>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src='/images/logo/logo.png' alt='Chi Hack Night' title='Chi Hack Night' class='img-responsive' /></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href='/events/index.html'><i class='fa fa-calendar-o'></i> Events</a></li>
+              <li><a href='/breakouts.html'><i class='fa fa-group'></i> Breakouts</a></li>
+              <li><a href='/blog/index.html'><i class='fa fa-pencil'></i> Blog</a></li>
+              <li><a href='/projects.html'><i class='fa fa-rocket'></i> Projects</a></li>
+              <li><a href='/about.html'><i class='fa fa-info-circle'></i> About</a></li>
+              <li><a href='/donate/' class='donate'><i class='fa fa-thumbs-up'></i> Donate</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div id='primary-content' class='col-sm-10 col-sm-offset-1'>
+      
+        <p><img alt="Slow Roll Chicago - Bike Equity Project" class="img-thumbnail" src="/images/projects/chicago-bike-equity.jpg" /></p>
+
+<p><a href='/projects.html'>&laquo; back to Projects &amp; successes</a></p>
+
+<h2>Slow Roll Chicago - Bike Equity Project</h2>
+
+  <p><i class='fa fa-globe'></i> <a target='_blank' href='http://www.stevevance.net/slowrollchicago/'>http://www.stevevance.net/slowrollchicago/</a></p>
+
+
+<div class='post'>
+  <p>Visualization and analysis of Chicago bike lanes. An effort to show the distribution of bike infrastructure investments in Chicago, while at the same time showing how those were related to socioeconomic and health indicators.</p>
+
+</div>
+
+<div class="row post">
+  <div class="col-sm-7">
+    <h2>Interview with a project leader</h2>
+
+<p class="pull-left">
+<img class="img-rounded project-headshot hidden-phone" src="/images/people/steven_vance.jpg" alt="Steven Vance" />
+</p>
+
+<p>
+Project leader<br />
+Steven Vance<br />
+Chicago Cityscape, Streetsblog Chicago
+</p>
+
+<div class="clearfix"></div>
+
+<p><strong>How did you come up with the idea for this project?</strong></p>
+
+<p>The idea came from Oboi Reed, the founder of <a href="http://slowrollchicago.tumblr.com/">Slow Roll Chicago</a>.</p>
+
+<p>Slow Roll Chicago works to achieve equity in bicycle access, bicycle usage, bicycle infrastructure, bicycle safety, bicycle culture, and other community-related and bicycle-related resources in Chicago with particular focus on communities on the Southside and Westside, making our communities healthier, more empowered, more economically viable, more socially cohesive, more bikeable, and ultimately more liveable.</p>
+
+<p><strong>How did Chi Hack Night help?</strong></p>
+
+<p>We found a lot of the data for bike infrastructure, income, and health, we researched how biking and hypertension are connected.</p>
+
+<p><strong>What was the impact of your project?</strong></p>
+
+<p>Slow Roll Chicago got a better understanding of how much bike infrastructure has been invested in areas of the city that are predominantly White or have middle to high incomes, and in areas that are predominantly Black or Hispanic/Latino or have lower incomes.</p>
+
+<p><strong>What did you learn from this project?</strong></p>
+
+<p>The City had changed its geographic distribution policy drastically in 2011 to install more bike infrastructure in predominantly Black areas, but predominantly Hispanic/Latino areas didn’t see any changes compared to prior to 2011. However, we also believe that their geographic distribution policy is based more on equality (equal investments in each part of Chicago) and not equity (which would be making investments according to the need in each part of Chicago).</p>
+
+<p><strong>More on this project</strong></p>
+
+<p><a href="https://chihacknight.org/events/2015/01/27/slow-roll-chicago.html">Slow Roll Chicago</a>, Olatunji Oboi Reed and Steven Vance, Chi Hack Night</p>
+
+<p><a href="https://chihacknight.org/events/2015/06/09/the-return-of-slow-roll-chicago.html">The Return of Slow Roll Chicago</a>, Olatunji Oboi Reed, Sonju Walker, Derek Burk, Mary Kuhn and Eric Sherman, Chi Hack Night</p>
+
+  </div>
+  <div class="col-sm-5">
+    <div class="well">
+      <table class='table table-condensed'>
+        <tbody>
+          
+          <tr>
+            <td>Website</td>
+            <td><a target='_blank' href='http://www.stevevance.net/slowrollchicago/'>Slow Roll Chicago - Bike Equity Project</a></td>
+          </tr>
+          
+          <tr>
+            <td>Tags</td>
+            <td>
+              
+                Issue advocacy<br />
+              
+                Mapping<br />
+              
+            </td>
+          </tr>
+          <tr>
+            <td>Creators</td>
+            <td>
+              
+                Olatunji Oboi Reed<br />
+              
+                Steven Vance<br />
+              
+                Many others<br />
+              
+            </td>
+          </tr>
+          <tr>
+            <td>GitHub</td>
+            <td><a href='https://github.com/zorostang/chicago_bike_equity'>https://github.com/zorostang/chicago_bike_equity</a></td>
+          </tr>
+          <tr>
+            <td>Launched</td>
+            <td>June 2015</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div> <!-- /container -->
+    <footer class="footer">
+      <div class="container">
+        <div class='row'>
+          <div class='col-sm-2 col-sm-offset-1'>
+            <small>
+              <strong><a href="/events/index.html">Past events</a></strong><br />
+              <a href="/breakouts.html">Breakout groups</a><br />
+              <a href="/code-of-conduct.html">Code of Conduct</a><br />
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/blog/index.html">Blog</a></strong><br />
+              <a href="/community.html">Community</a><br />
+              <a href="/open-source-projects.html">Open source projects</a><br />
+              <a href="/data-resources.html">Data & resources</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/about.html">About</a></strong><br />
+              <a href='/team.html'>Team</a><br />
+              <a href="/leadership-council.html">Leadership Council</a><br />
+              <a href='/speaker-submissions.html'>Speaker submissions</a>
+            </small>
+          </div>
+          
+          <div class='col-sm-2'>
+            <small>
+              <strong>Elsewhere</strong><br /> 
+              <i class='fa fa-fw fa-youtube'></i> <a href="https://www.youtube.com/c/ChiHackNight">YouTube</a><br />
+              <i class='fa fa-fw fa-facebook'></i> <a href="https://www.facebook.com/chihacknight">Facebook</a><br />
+              <i class='fa fa-fw fa-twitter'></i> <a href="https://twitter.com/chihacknight" target='_blank'>Twitter</a><br />
+              <i class='fa fa-fw fa-github'></i> <a href="https://github.com/chihacknight/chihacknight.org/" target='_blank'>GitHub</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              &copy; 2018 Chi Hack Night
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

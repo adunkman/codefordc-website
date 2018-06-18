@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>
+      
+        The labor required to keep civic apps alive - 
+      
+      Chi Hack Night - Chicago's weekly event to build, share, and learn about civic tech.
+    </title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <meta content="The CPS Tiers map doesn’t update automagically. I volunteer my time to keep it accurate and up to date, and it’s worth doing." name='description' />
+    
+    <meta content='Chi Hack Night' name='author' />
+
+    <!-- Facebook metadata -->
+    <meta content="Chi Hack Night" property="og:site_name">
+    
+      <meta content="The labor required to keep civic apps alive - Chi Hack Night" property="og:title">
+    
+    
+      <meta content="article" property="og:type">
+    
+    
+      <meta content="The CPS Tiers map doesn’t update automagically. I volunteer my time to keep it accurate and up to date, and it’s worth doing." property="og:description">
+    
+    
+      <meta content="https://chihacknight.org/blog/2015/10/09/the-labor-required-to-keep-civic-apps-alive.html" property="og:url">
+    
+    
+      <meta content="2015-10-09T00:00:00-05:00" property="article:published_time">
+      <meta content="https://chihacknight.org/about-us/" property="article:author">
+    
+
+    
+      <meta content="https://chihacknight.org/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img1.png" property="og:image">
+    
+    
+      
+      <meta content="blog" property="article:section">
+      
+    
+    
+      
+    
+
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="Chi Hack Night">
+    <meta name="twitter:creator" content="Chi Hack Night">
+    
+      <meta name="twitter:title" content="The labor required to keep civic apps alive">
+    
+    
+      <meta name="twitter:url" content="https://chihacknight.org/blog/2015/10/09/the-labor-required-to-keep-civic-apps-alive.html">
+    
+    
+      <meta name="twitter:description" content="The CPS Tiers map doesn’t update automagically. I volunteer my time to keep it accurate and up to date, and it’s worth doing.">
+    
+    
+      <meta name="twitter:image" content="https://chihacknight.org/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img1.png">
+    
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://chihacknight.org/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://chihacknight.org/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://chihacknight.org/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="Chi Hack Night"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://chihacknight.org/mstile-144x144.png" />
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.flatly.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap.css">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.10.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/analytics_lib.js"></script>
+
+    <script src="/js/moment.min.js"></script>
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/dataTables.bootstrap.js"></script>
+    <script src="/js/jquery.dataTables.sorting.js"></script>
+    <script src="/js/jquery.address.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/js/spin.min.js"></script>
+    <script src="/js/jquery.spin.js"></script>
+    <script src="/js/jquery.scrollto.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverted navbar-static-top">
+      <div class="container">
+        <div class='col-sm-10 col-sm-offset-1'>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><img src='/images/logo/logo.png' alt='Chi Hack Night' title='Chi Hack Night' class='img-responsive' /></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href='/events/index.html'><i class='fa fa-calendar-o'></i> Events</a></li>
+              <li><a href='/breakouts.html'><i class='fa fa-group'></i> Breakouts</a></li>
+              <li><a href='/blog/index.html'><i class='fa fa-pencil'></i> Blog</a></li>
+              <li><a href='/projects.html'><i class='fa fa-rocket'></i> Projects</a></li>
+              <li><a href='/about.html'><i class='fa fa-info-circle'></i> About</a></li>
+              <li><a href='/donate/' class='donate'><i class='fa fa-thumbs-up'></i> Donate</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div id='primary-content' class='col-sm-10 col-sm-offset-1'>
+      
+        <div class='row'>
+  <div class="col-sm-12 post">
+    <h2>
+      The labor required to keep civic apps alive
+    </h2>
+    <p class='muted'>
+      Published on Oct 9, 2015 by
+      Derek Eder
+      
+    </p>
+
+    <p>The CPS Tiers map doesn’t update automagically. I volunteer my time to keep it accurate and up to date, and it’s worth doing.</p>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img1.png" alt="Chicago Public School Tiers, a lookup tool for selective school enrollment by Derek Eder and Forest Gregg of Open City" class="img-thumbnail" /></p>
+
+    <small><em>Chicago Public School Tiers, a lookup tool for selective school enrollment by Derek Eder and Forest Gregg of Open City</em></small><br /><br />
+</div>
+
+<p>Building new civic apps is a lot of fun! I’ve been <a href="http://derekeder.com/about">doing it for a while now</a> and <a href="http://www.chicagolobbyists.org/">created</a> <a href="http://secondcityzoning.org/">quite</a> <a href="http://istheresewageinthechicagoriver.com/">a</a> <a href="http://clearstreets.org/">few</a>.</p>
+
+<p>But once you’ve built something, it’s kind of like getting a puppy. You gotta be a responsible adult and take care of it.</p>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img10.jpg" alt="Civic tech puppy says: please maintain me!" class="img-thumbnail" /></p>
+
+    <small><em>Civic tech puppy says: please maintain me!</em></small><br /><br />
+</div>
+
+<p>Unfortunately, apps are rarely maintained in the civic tech world. Just take a look at all the dead projects from the <a href="http://www.smartchicagocollaborative.org/list-of-apps-for-metro-chicago-applicants/">Apps for Metro Chicago Contest</a>, which only happened 3 years ago.</p>
+
+<p>I just updated <a href="http://cpstiers.opencityapps.org/">Chicago Public School Tiers</a> with data for 2016-2017 school enrollment and wanted to share the steps I went through to do it.</p>
+
+<p>It involves a government website, extracting data from a PDF document, manipulating spreadsheet data, merging datasets using Google Fusion Tables, and customizing a set of interactive map stiles.</p>
+
+<p>But first, if you haven’t heard of this tool before, here’s what it’s about:</p>
+
+<h3 id="about-chicago-public-school-tiers">About Chicago Public School Tiers</h3>
+
+<p>In Chicago, a student’s chance of getting into the city’s top, <a href="http://cpstiers.opencityapps.org/about.html#four-types">selective schools</a> depends on where he or she lives.</p>
+
+<p>Chicago Public Schools (CPS) places every part of the city into one of four <a href="http://cpstiers.opencityapps.org/about.html#the-tier-system">socio-economic “tiers.”</a> On average, people from Tier 1 areas make less money and have less education, and people from Tier 4 areas make more money and have more education.</p>
+
+<p>Chicago Public School Tiers is a tool to help find what CPS tier you are in.</p>
+
+<p>This civic app, created by me, Forest Gregg and Juan-Pablo Velez in March 2012 continues to be one of our most popular projects, netting between 2,000 and 4,000 unique visits a month.</p>
+
+<p>CPS parents really need to know this information, and CPS Tiers continues to be the easiest way to find it.</p>
+
+<p>Ok, on to how I update it.</p>
+
+<h3 id="step-1-finding-the-source-data">Step 1: Finding the source data</h3>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img2.png" alt="The Chicago Public Schools Office of Access and Enrollment website" class="img-thumbnail" /></p>
+
+    <small><em>The Chicago Public Schools Office of Access and Enrollment website</em></small><br /><br />
+</div>
+
+<p>The tier information is posted by the Chicago Public Schools Office of Access and Enrollment on <a href="http://www.cpsoae.org/">their website</a>.</p>
+
+<p>The Office of Access and Enrollment <a href="http://www.cpsoae.org/apps/news/show_news.jsp?REC_ID=184188&amp;id=0">post updated tiers</a> every year in early October ahead of the enrollment deadline for the upcoming school year.</p>
+
+<p>Also shown on this page are the official instructions provided to parents for looking up their tier:</p>
+
+<blockquote>
+  <p>You can also calculate your tier by following the steps below:</p>
+
+  <ol>
+    <li>Click <a href="http://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?ref=addr&amp;refresh=f">here</a> to go to the U.S. census website.</li>
+    <li>Enter your address and click ‘go.’</li>
+    <li>Scroll down to the table entitled “Geography Results.” Under the column “Geography Name,” look in the sixth row for your census tract number, followed by the county and state.</li>
+    <li>Click <a href="http://www.cpsoae.org/Census%20Tract%20--%20Tier%20Information_2016-2017.pdf">here</a> to access the “Census Tract to Tier for Chicago” document. The census tracts are sorted in numeric order; the number in the “short tract” column corresponds to the census tract number you obtained on the U.S. census website. Click “Control F” and type in your census tract number. The number in the third column is your tier.</li>
+  </ol>
+</blockquote>
+
+<p>Here’s a screenshot of these instructions for posterity:</p>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img3.png" alt="Instructions on looking up your CPS tier" class="img-thumbnail" /></p>
+
+    <small><em>Instructions on looking up your CPS tier</em></small><br /><br />
+</div>
+
+<p>As an aside, when we first came across these instructions, we thought it was about 3 steps too many, and decided we could use our technology skills to help out parents a bit and built the CPS Tiers app.</p>
+
+<p>Anyway, there’s a link at the bottom of this page we care about: the <a href="http://www.cpsoae.org/Summary%20of%20Census%20Socioeconomic%20Data_2016-2017.pdf">Summary of Census Tract Data</a> for the current year’s tiers. It’s a PDF file containing tables of data.</p>
+
+<h3 id="step-2-extract-data-from-a-pdf-using-tabula">Step 2: Extract data from a PDF using Tabula</h3>
+
+<p>Many governments like to publish data as PDF files. This makes for easier reading by people, but it’s hard for doing much else with them. We need to get this data into a format we can work with - <a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a>.</p>
+
+<p>Sometimes you get lucky and you can just select the text and paste it into your spreadsheet editor of choice (I prefer <a href="http://www.libreoffice.org/">LibreOffice</a> - it’s free!). Most of the time, however, the data isn’t copy/paste-able.</p>
+
+<p>Thankfully, there’s <a href="http://tabula.technology/">Tabula</a>, a free and open source tool for extracting tabular data from PDFs built by<a href="http://jazzido.com/"> Manuel Aristarán</a>,<a href="https://mike.tig.as/"> Mike Tigas</a> and<a href="http://jeremybmerrill.com/"> Jeremy B. Merrill</a> with the support of<a href="http://propublica.org"> ProPublica</a>,<a href="http://blogs.lanacion.com.ar/data/"> La Nación DATA</a>,<a href="http://opennews.org/"> Knight-Mozilla OpenNews</a>,<a href="http://www.nytimes.com"> The New York Times</a> and<a href="http://www.knightfoundation.org/"> The Knight Foundation</a>.</p>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img4.png" alt="Using Tabula to extract tables from PDF documents" class="img-thumbnail" /></p>
+
+    <small><em>Using Tabula to extract tables from PDF documents</em></small><br /><br />
+</div>
+
+<p>Just run the Tabula app, select your PDF file to extract, and use their handy interface to select the text you want to extract for each page. Our document is 10 pages, so I select the tables (but not the headers - those get repeated on every page) on each one.</p>
+
+<p>Click ‘Preview and Export Data’, copy to the clipboard, and fire up your spreadsheet editor.</p>
+
+<h3 id="step-3-clean-up-the-extracted-spreadsheet-data">Step 3: Clean up the extracted spreadsheet data</h3>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img5.png" alt="Cleaning up the data in LibreOffice, a free alternative to Excel" class="img-thumbnail" /></p>
+
+    <small><em>Cleaning up the data in LibreOffice, a free alternative to Excel</em></small><br /><br />
+</div>
+
+<p>Tabula just did a ton of work for us, but we still need to clean up a few things. The headers had line breaks in them, so we’ll need to combine those each into one cell. At this point, I also pull in the tier data from previous years so I can keep a history of the tiers and how they’ve changed over time.</p>
+
+<p>I also create a new column called ‘Change from current year’ that is the difference between the 2016-2017 tiers and 2015-2016 tiers. I’ll be using this later to make another map (step 6).</p>
+
+<h3 id="step-4-merge-with-us-census-tract-shapes">Step 4: Merge with US Census Tract shapes</h3>
+
+<p>Once I have my data cleaned up, I upload it to <a href="https://support.google.com/fusiontables/answer/2571232?hl=en">Google Fusion Tables</a>.</p>
+
+<p>Fusion Tables is a free service by Google that makes it really easy to make maps (and other visualizations) out of spreadsheets. I use it quite a bit and have a <a href="https://github.com/derekeder/FusionTable-Map-Template">popular open source template</a> for making custom mapping websites with it.</p>
+
+<p>CPS Tiers is powered by Fusion Tables, but we also get another cool utility out of it: table merging.</p>
+
+<p>Each CPS Tier geography is actually a <a href="https://en.wikipedia.org/wiki/Census_tract">Census Tract</a>, a geography determined by the US Census that contains, on average, 4,000 people. To make the map of tiers, I need to take the data I extracted in the above steps and merge it with the shapes of each Census Tract.</p>
+
+<p>I could go get this data directly from the US Census, but the City of Chicago already makes the tracts in <a href="https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Census-Tracts-2010/5jrd-6zik">Chicago available on their Data Portal</a>. Yay!</p>
+
+<p>I download the tracts shapefile in <a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language">KML format</a> and upload it to Google Fusion Tables too.</p>
+
+<p>Now I can use the <a href="https://support.google.com/fusiontables/answer/171254?hl=en">Fusion Tables merge feature</a> and combine these two tables into one master table with both my data and my geographies. Neat!</p>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img6.png" alt="Merging the 2016-2017 tiers with 2010 Census Tract shapes" class="img-thumbnail" style="width: 50%;" /></p>
+
+    <small><em>Merging the 2016-2017 tiers with 2010 Census Tract shapes</em></small><br /><br />
+</div>
+
+<h3 id="step-5-customize-the-fusion-table-map-styles">Step 5: Customize the Fusion Table map styles</h3>
+
+<p>Next, I customize the Fusion Table map styles so we can tell the difference between the 4 different tiers. For displaying tiers numbering from 1 thru 4, it’s simplest to use a sequential set of shades using a single hue (blue in this case).</p>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img7.png" alt="Customizing the Fusion Tables map styles" class="img-thumbnail" style="width: 50%;" /></p>
+
+    <small><em>Customizing the Fusion Tables map styles</em></small><br /><br />
+</div>
+
+<p>Here’s a little tip: picking colors for maps is actually pretty hard. The default colors that Fusion Tables give you are pretty crass, and it’s really challenging to find colors that are both easy to tell apart and work for those who are colorblind too.</p>
+
+<p>Thankfully, <a href="http://www.personal.psu.edu/cab38/">Cynthia Brewer</a>, head of the Department of Cartography at Penn State, created a tool called <a href="http://www.personal.psu.edu/cab38/">ColorBrewer</a> to help us pick good map colors.</p>
+
+<p>I picked 4 data classes, sequential, and the blue single hue.</p>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img9.png" alt="ColorBrewer using 4 data classes, sequential, and the blue single hue" class="img-thumbnail" /></p>
+
+    <small><em>ColorBrewer using 4 data classes, sequential, and the blue single hue</em></small><br /><br />
+</div>
+
+<h3 id="step-6-create-a-map-showing-the-tier-changes">Step 6: Create a map showing the tier changes</h3>
+
+<p>I’m not quite done yet. I want to make a second map that shows which tiers have changed since last year and how.</p>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img8.png" alt="A map showing how tiers changed from the previous year" class="img-thumbnail" /></p>
+
+    <small><em>A map showing how tiers changed from the previous year</em></small><br /><br />
+</div>
+
+<p>For this map, I color each shape using 3 data classes, diverging, and using red (tract went down a tier) vs blue (tract went up a tier).</p>
+
+<h3 id="step-7-update-cpstiersopencityappsorg">Step 7: Update cpstiers.opencityapps.org</h3>
+
+<p>Finally, my maps are done! All that’s left is to swap out my Fusion Table ID, since I created a new one, and update some text throughout the site.</p>
+
+<p>The code for the CPS Tiers website is open source on <a href="https://github.com/open-city/cps-tiers">GitHub</a>, and you can see every change I made <a href="https://github.com/open-city/cps-tiers/compare/0732e4dd83eb57d63f464c5c3f2ce9fe94869f10...f7aa553f520072a4ff537f4e68891e980cd37c25">using this handy comparison view</a>.</p>
+
+<p>And I’m done! Until next year, when the tiers are updated yet again.</p>
+
+<h3 id="why-this-matters">Why this matters</h3>
+
+<p>I’ve been updating CPS Tiers this way for the past 3 years. I’ve met and talked to parents that use it and <a href="http://cpstiers.opencityapps.org/testimonials.html">heard from some of them</a> just how challenging and unfair the Chicago Public Schools selective enrollment process is.</p>
+
+<p>This app is one way we, as civic technologists, have found to make the lives of some Chicagoans a little bit better. That’s why we built it in the first place.</p>
+
+<p>And it’s for that exact same reason that I take the time every year to keep it going. If we are truly doing this work to improve the public good, then we need to put energy into maintaining, and not just building, civic technology.</p>
+
+<div style="text-align: center;">
+    <p><img src="/images/blog/2015-10-09-how-i-update-the-cps-tiers-map/img11.jpg" alt="Some civic tech puppies turn into civic tech dogs!" class="img-thumbnail" style="width: 50%;" /></p>
+
+    <small><em>Some civic tech puppies turn into civic tech dogs!</em></small><br /><br />
+</div>
+
+
+    <hr />
+
+    <h3>About the author</h3>
+
+    <div class='row'>
+      <div class='col-sm-3'>
+
+        
+          <a href='https://twitter.com/derekeder'>
+            <img class='img-rounded author-headshot hidden-phone' src='/images/people/derek_eder.jpg' alt='Derek Eder' />
+          </a>
+          <h4>
+            <a href='https://twitter.com/derekeder'>Derek Eder</a>
+          </h4>
+        
+      </div>
+      <div class='col-sm-9'>
+        <p><br />Derek is an entrepreneur, developer and one of the leaders of the civic technology community in Chicago. He is a co-founder and partner at DataMade — a company that tells stories and builds tools with data — and is the lead organizer for Chi Hack Night.</p>
+      </div>
+    </div>
+
+    
+  </div>
+  
+</div>
+
+      </div>
+    </div> <!-- /container -->
+    <footer class="footer">
+      <div class="container">
+        <div class='row'>
+          <div class='col-sm-2 col-sm-offset-1'>
+            <small>
+              <strong><a href="/events/index.html">Past events</a></strong><br />
+              <a href="/breakouts.html">Breakout groups</a><br />
+              <a href="/code-of-conduct.html">Code of Conduct</a><br />
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/blog/index.html">Blog</a></strong><br />
+              <a href="/community.html">Community</a><br />
+              <a href="/open-source-projects.html">Open source projects</a><br />
+              <a href="/data-resources.html">Data & resources</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              <strong><a href="/about.html">About</a></strong><br />
+              <a href='/team.html'>Team</a><br />
+              <a href="/leadership-council.html">Leadership Council</a><br />
+              <a href='/speaker-submissions.html'>Speaker submissions</a>
+            </small>
+          </div>
+          
+          <div class='col-sm-2'>
+            <small>
+              <strong>Elsewhere</strong><br /> 
+              <i class='fa fa-fw fa-youtube'></i> <a href="https://www.youtube.com/c/ChiHackNight">YouTube</a><br />
+              <i class='fa fa-fw fa-facebook'></i> <a href="https://www.facebook.com/chihacknight">Facebook</a><br />
+              <i class='fa fa-fw fa-twitter'></i> <a href="https://twitter.com/chihacknight" target='_blank'>Twitter</a><br />
+              <i class='fa fa-fw fa-github'></i> <a href="https://github.com/chihacknight/chihacknight.org/" target='_blank'>GitHub</a>
+            </small>
+          </div>
+          <div class='col-sm-2'>
+            <small>
+              &copy; 2018 Chi Hack Night
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
